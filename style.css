@@ -1,0 +1,168 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+/* Navigation Bar */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003f87;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  object-fit: contain;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.backgroundHero{
+    position: absolute;
+    width: 100%;
+    top: -60px;
+    left: 0;
+    z-index: 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: 30;
+}
+
+.overlay{
+    position: absolute;
+    opacity: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 20;
+}
+
+#belizeflag{
+    height: 120px;
+    width: auto;
+}
+
+.interviewLink{
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+#britishHonduras{
+    height: 140px;
+    width: auto;
+}
+
+.britishHonduras2{
+    margin-top: 20px;
+    height: 140px;
+    width: auto;
+}
+
+.flagContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+}
+
+main section {
+  margin-bottom: 3rem;
+}
+
+main h2 {
+  color: #003f87;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+h1 {
+    color: #c0c0c0;
+    font-size: large;
+}
+
+main ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #003f87;
+  color: white;
+  margin-top: 3rem;
+}
+
+
+
